@@ -3,7 +3,7 @@
 
 #include <Windows.h>
 
-#include <vld.h>
+#include <vld_wrapper.h>
 
 int main(int argc, char *argv[]) {
   int * p = new int[4];

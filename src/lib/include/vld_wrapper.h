@@ -1,5 +1,8 @@
 #ifndef D83C841D_3B36_470B_BFB4_DF8F4D5A4600
 #define D83C841D_3B36_470B_BFB4_DF8F4D5A4600
-#include <string>
+
+#ifdef USEVLD
+#include <vld.h>
+#endif
 
 #endif /* D83C841D_3B36_470B_BFB4_DF8F4D5A4600 */

@@ -43,6 +43,13 @@ endif()
 
 set(LIB_VLD_INC "${CMAKE_CURRENT_LIST_DIR}/include/")
 
-configure_file("${CMAKE_CURRENT_LIST_DIR}/vld.ini" "${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/vld.ini")
+
+if(CMAKE_BUILD_TYPE AND (CMAKE_BUILD_TYPE STREQUAL "Debug"))
+    message("Debug mode:${CMAKE_C_FLAGS_DEBUG}")
+	set(IsDebug true)
+else()
+    message("Release mode:${CMAKE_C_FLAGS_RELEASE}")
+	set(IsDebug false)
+endif()
 
 add_subdirectory(src)
