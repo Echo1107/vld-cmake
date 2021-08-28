@@ -38,7 +38,7 @@ if(WIN32)
         set(BIN_VLD_DIR "${CMAKE_CURRENT_LIST_DIR}/bin/Win32")
 	endif()
 elseif(UNIX)
-    message(FATAL_ERROR "Unix-like OS is not supported.")
+    message(STATUS "Unix-like OS is not supported.")
 endif()
 
 set(LIB_VLD_INC "${CMAKE_CURRENT_LIST_DIR}/include/")
